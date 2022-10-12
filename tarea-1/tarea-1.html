@@ -25,6 +25,24 @@
     </header>
 
     <main>
+        <div class="container-titulo">
+            <h1>Ingrese sus datos</h1>
+        </div>
+        <div class="container-formulario">
+            <form action="">
+                <label for="nombre">Nombre
+                    <input name="nombre" type="text" placeholder="Ingrese su nombre">
+                </label>
+                <label for="">Apellido
+                    <input type="text" name="apellido" placeholder="Ingrese su apellido">
+                </label>
+                <label for="">Edad
+                    <input type="number" name="edad" min="1" max="99" placeholder="Edad">
+                </label>
+                <button type="button" onclick="imprimirDatos()">Enviar</button>
+            </form>
+        </div>
+
     </main>
 
 </body>
