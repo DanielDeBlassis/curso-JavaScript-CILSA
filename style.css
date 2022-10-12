@@ -11,3 +11,7 @@ header {
     border-bottom: solid 5px black;
     border-bottom-style: double;
 }
+
+h1{
+    border-bottom: solid 1px lightgreen;
+}
