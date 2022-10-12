@@ -5,3 +5,12 @@
     padding: 20px 0;
     background: lightsteelblue;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0;
+}
