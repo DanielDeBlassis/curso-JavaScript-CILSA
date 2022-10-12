@@ -14,3 +14,11 @@ form {
     gap: 20px;
     padding: 25px 0;
 }
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
