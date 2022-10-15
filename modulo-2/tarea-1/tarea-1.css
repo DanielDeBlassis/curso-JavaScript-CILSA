@@ -66,4 +66,10 @@ input{
     border-bottom: dotted;
 }
 
+p.parrafo {
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 30px;
+}
 
