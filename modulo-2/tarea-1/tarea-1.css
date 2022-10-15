@@ -43,5 +43,10 @@
     align-items: center;
 }
 
+.container__titulo{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 
 
