@@ -36,6 +36,12 @@
     animation-delay: 5s;
 }
 
+.container_formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
