@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-bottom: solid 5px black;
+    border-bottom: solid 5px #01a3e4;
     border-bottom-style: double;
 }
 
@@ -29,6 +29,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+table{
     font-size: 30px;
 }
 
@@ -41,4 +44,16 @@ ul, li{
     flex-direction: row;
     gap: 20px;
     list-style: none;
+}
+
+/* --------------------------------------------------------------------------- */
+/* ----------------------------- MEDIA QUERYS -------------------------------- */
+/* --------------------------- AJUSTE PANTALLAS ------------------------------ */
+/* --------------------------------------------------------------------------- */
+
+@media screen and (max-width: 325px){
+    img {
+        width: 50px;
+        margin: 0 10px;
+    }
 }
