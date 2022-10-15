@@ -46,6 +46,27 @@
                 </p>
             </details>
         </section>
+        <section class="container_formulario">
+            <div class="container__titulo">
+                <h1>Complete el Formulario</h1>
+            </div>
+            <form class="formulario">
+                <label for="nombre">Nombre
+                    <input type="text" name="nombre" required>
+                </label>
+                <label for="apellido">Apellido
+                    <input type="text" name="apellido" required>
+                </label>
+                <label for="edad">Edad
+                    <input type="number" name="edad" min="1" max="99" required>
+                </label>
+                <label for="ciudad">Ciudad
+                    <input type="text" name="ciudad" required>
+                </label>
+                <button type="submit" id="boton-enviar" class="btn btn-primary"
+                    onclick="mostrarDatos(event)">Enviar</button>
+            </form>
+        </section>
     </main>
 
 </body>
