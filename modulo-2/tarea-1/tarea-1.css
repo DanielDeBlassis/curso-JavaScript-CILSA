@@ -48,5 +48,22 @@
     padding-bottom: 50px;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+input{
+    border: none;
+    border-bottom: dotted;
+}
 
 
