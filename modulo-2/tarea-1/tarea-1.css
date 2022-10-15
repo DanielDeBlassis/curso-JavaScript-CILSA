@@ -73,3 +73,58 @@ p.parrafo {
     padding-bottom: 30px;
 }
 
+/* --------------------------------------------------------------------------- */
+/* ----------------------------- MEDIA QUERYS -------------------------------- */
+/* --------------------------- AJUSTE PANTALLAS ------------------------------ */
+/* --------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1100px){
+    .detalles{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .detalles_titulo{
+        width: 700px;
+    }
+    .detalles_descripcion{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .detalles{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .detalles_titulo{
+        width: 400px;
+    }
+    .detalles_descripcion{
+        font-size: 1rem;
+        width: 400px;
+    }
+    p.parrafo {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .detalles{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .detalles_titulo{
+        width: 200px;
+    }
+    .detalles_descripcion{
+        font-size: 10px;
+        width: 200px;
+    }
+    p.parrafo {
+        font-size: 10px;
+    }
+}
+
+
+
+
