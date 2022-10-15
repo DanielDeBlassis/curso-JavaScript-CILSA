@@ -1,0 +1,130 @@
+.container_detalles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detalles{
+    font-size: 30px;
+    padding: 50px;
+}
+.detalles_titulo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #01a3e4;
+    opacity: 0.8;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 1000px;
+}
+.detalles_titulo:hover{
+    background-color: #1392c5;
+    opacity: 0.8;
+}
+.detalles_descripcion{
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+    width: 1000px;
+    border: solid;
+    border-color: #01a3e4;
+    border-radius: 10px;
+    opacity: 0.8;
+    animation-delay: 5s;
+}
+
+.container_formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__titulo{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+input{
+    border: none;
+    border-bottom: dotted;
+}
+
+p.parrafo {
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* --------------------------------------------------------------------------- */
+/* ----------------------------- MEDIA QUERYS -------------------------------- */
+/* --------------------------- AJUSTE PANTALLAS ------------------------------ */
+/* --------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1100px){
+    .detalles{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .detalles_titulo{
+        width: 700px;
+    }
+    .detalles_descripcion{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .detalles{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .detalles_titulo{
+        width: 400px;
+    }
+    .detalles_descripcion{
+        font-size: 1rem;
+        width: 400px;
+    }
+    p.parrafo {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .detalles{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .detalles_titulo{
+        width: 200px;
+    }
+    .detalles_descripcion{
+        font-size: 10px;
+        width: 200px;
+    }
+    p.parrafo {
+        font-size: 10px;
+    }
+}
+
+
+
+
