@@ -24,3 +24,25 @@ function ordenarPorEntrega() {
     return posicionesEntrega;
 }
 
+/**
+ * Imprime un arreglo de nombres que se le pasa como parámetro
+ * 
+ * @param {*Array} array arreglo que contiene una colección de nombres
+ * @param {*String} titulo texto que describe el criterio de ordenamiento
+ */
+function imprimirPosiciones(array, titulo) {
+
+    const $titulo = document.querySelector(".posiciones_titulo");
+    const $contenedorPosicionesActuales = document.querySelector(".posiciones--actuales");
+
+    let contenidoPosiciones = ``;
+
+    for (let i = 0; i < array.length; i++) {
+        contenidoPosiciones += `<p class="posicion"><b>#${i + 1}</b> ${array[i]}</p>`;
+    }
+
+    $titulo.innerHTML = ``;
+    $titulo.innerHTML = `<h2>${titulo}</h2>`;
+
+    $contenedorPosicionesActuales.innerHTML = contenidoPosiciones;
+}
