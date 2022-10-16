@@ -50,3 +50,8 @@ function imprimirPosiciones(array, titulo) {
 const posicionesLista = ["Jesús", "Laura", "Nahuel", "Mónica", "María", "Leandro", "Susana"];
 const $botonLista = document.querySelector("#btn-orden-lista");
 const $botonEntrega = document.querySelector("#btn-orden-entrega");
+
+$botonLista.addEventListener("click", () => {
+    imprimirPosiciones(posicionesLista, "Orden de posiciones en la lista de alumnos");
+});
+
