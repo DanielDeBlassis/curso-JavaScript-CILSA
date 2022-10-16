@@ -72,3 +72,15 @@ section.container_botones {
 .posiciones--actuales {
     padding: 30px 0;
 }
+
+i#plus, i#stable {
+    color: green;
+}
+
+i#upper {
+    color: blue;
+}
+
+i#down {
+    color: red;
+}
