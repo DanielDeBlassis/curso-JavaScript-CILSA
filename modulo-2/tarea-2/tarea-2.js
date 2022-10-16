@@ -46,3 +46,5 @@ function imprimirPosiciones(array, titulo) {
 
     $contenedorPosicionesActuales.innerHTML = contenidoPosiciones;
 }
+
+const posicionesLista = ["Jesús", "Laura", "Nahuel", "Mónica", "María", "Leandro", "Susana"];
