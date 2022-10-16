@@ -48,3 +48,5 @@ function imprimirPosiciones(array, titulo) {
 }
 
 const posicionesLista = ["Jesús", "Laura", "Nahuel", "Mónica", "María", "Leandro", "Susana"];
+const $botonLista = document.querySelector("#btn-orden-lista");
+const $botonEntrega = document.querySelector("#btn-orden-entrega");
