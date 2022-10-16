@@ -1,3 +1,47 @@
+/* ------------------------ */
+/* -----ESTILOS DETAIL----- */
+/* ------------------------ */
+.container_detalles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detalles{
+    font-size: 30px;
+    padding: 50px;
+}
+.detalles_titulo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #01a3e4;
+    opacity: 0.8;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 1000px;
+}
+.detalles_titulo:hover{
+    background-color: #1392c5;
+    opacity: 0.8;
+}
+.detalles_descripcion{
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+    width: 1000px;
+    border: solid;
+    border-color: #01a3e4;
+    border-radius: 10px;
+    opacity: 0.8;
+    animation-delay: 5s;
+}
+/* ------------------------ */
+/* ------------------------ */
+/* ------------------------ */
+
 .container-titulo{
     display: flex;
     justify-content: center;
