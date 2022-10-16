@@ -55,3 +55,6 @@ $botonLista.addEventListener("click", () => {
     imprimirPosiciones(posicionesLista, "Orden de posiciones en la lista de alumnos");
 });
 
+$botonEntrega.addEventListener("click", () => {
+    imprimirPosiciones(ordenarPorEntrega(), "Orden de posiciones por entrega");
+});
