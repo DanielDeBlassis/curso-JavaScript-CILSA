@@ -84,3 +84,63 @@ i#upper {
 i#down {
     color: red;
 }
+
+/* --------------------------------------------------------------------------- */
+/* ----------------------------- MEDIA QUERYS -------------------------------- */
+/* --------------------------- AJUSTE PANTALLAS ------------------------------ */
+/* --------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1100px){
+    .detalles{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .detalles_titulo{
+        width: 700px;
+    }
+    .detalles_descripcion{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .detalles{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .detalles_titulo{
+        width: 400px;
+    }
+    .detalles_descripcion{
+        font-size: 1rem;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .detalles{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .detalles_titulo{
+        width: 200px;
+    }
+    .detalles_descripcion{
+        font-size: 10px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 325px){
+    .detalles{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .detalles_titulo{
+        width: 150px;
+    }
+    .detalles_descripcion{
+        font-size: 9px;
+        width: 150px;
+    }
+}
