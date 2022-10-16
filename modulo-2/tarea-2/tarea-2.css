@@ -57,3 +57,18 @@ section.container_posiciones {
     width: 150px;
 }
 
+p.posicion {
+    font-weight: 500;
+}
+
+section.container_botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.posiciones--actuales {
+    padding: 30px 0;
+}
