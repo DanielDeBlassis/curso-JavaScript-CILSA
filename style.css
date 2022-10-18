@@ -12,10 +12,6 @@ header {
     border-bottom-style: double;
 }
 
-h1{
-    border-bottom: solid 1px lightgreen;
-}
-
 nav {
     margin: 0 20px;
 }
