@@ -39,3 +39,10 @@ opciones.addEventListener("click", actualizarEleccion);
 function obtenerNumeroMaximo(arreglo) {
     return Math.max(...arreglo);
 }
+/**
+ * Genera una ventana emergente personalizada con sweetalert que tiene un mensaje especificando el número máximo
+ * @param {number} maximo número máximo a mostrar en el mensaje
+ */
+function alerta(maximo) {
+    swal(`El número máximo ingresado es ${maximo}`);
+}
