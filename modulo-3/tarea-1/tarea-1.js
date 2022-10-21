@@ -62,3 +62,19 @@ function mostrarNumeroMaximo() {
     alerta(maximo);
 }
 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+// 3) SUMAR NÚMEROS           //////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+/**
+ * Muestra el resultado de la suma de los números ingresados
+ */
+function mostrarResultadoSuma() {
+    let $num1 = Number.parseInt(document.querySelector('input[name="suma-numero-1"]').value);
+    let $num2 = Number.parseInt(document.querySelector('input[name="suma-numero-2"]').value);
+    let suma = sumarNumeros($num1, $num2);
+
+    const $contenedorResultado = document.querySelector(".contenedor-resultado");
+    $contenedorResultado.innerHTML = `<p class="resultado-suma">La suma de los números ingresados es igual a ${suma}</p>`;
+}
