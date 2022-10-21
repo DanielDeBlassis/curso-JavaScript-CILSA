@@ -46,3 +46,19 @@ function obtenerNumeroMaximo(arreglo) {
 function alerta(maximo) {
     swal(`El número máximo ingresado es ${maximo}`);
 }
+/**
+ * Convierte los valores ingresados, obtiene el máximo y llama a la función para emitir una ventana emergente
+ */
+function mostrarNumeroMaximo() {
+
+    let $numero1 = Number.parseInt(document.querySelector('input[name="max-numero-1"]').value);
+    let $numero2 = Number.parseInt(document.querySelector('input[name="max-numero-2"]').value);
+
+    let arreglo = [];
+    arreglo.push($numero1);
+    arreglo.push($numero2);
+
+    let maximo = obtenerNumeroMaximo(arreglo);
+    alerta(maximo);
+}
+
