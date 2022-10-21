@@ -139,3 +139,16 @@ button{
 
 }
 
+/* BANDERAS */
+.flag{
+    width: 30px;
+}
+
+.flag-2{
+    width: 20px;
+}
+
+.flag-2.argentina{
+    width: 30px;
+}
+
