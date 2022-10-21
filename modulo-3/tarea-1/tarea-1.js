@@ -21,3 +21,8 @@ function imprimirMensaje(eleccion) {
     mensajeCheck.innerHTML = `<p class="ganador-elegido ${eleccion}">${mensaje} <span class="eleccion ${eleccion}">${eleccion}</span> <img src="img/${eleccion}.png" class="flag-2 ${eleccion}" alt="Bandera de ${eleccion}"/></p>`;
 }
 
+const opciones = document.querySelector(".contenedor-opciones");
+
+opciones.addEventListener("click", actualizarEleccion);
+
+
