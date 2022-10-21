@@ -52,6 +52,75 @@
             </details>
         </section>
 
+        <section class="container_formulario">
+            <form class="formulario">
+
+                <div class="formulario_opciones">
+                    <p class="seccion-formulario-titulo">Elija una opción</p>
+
+                    <p class="pregunta">¿Quién cree que ganará el Mundial FIFA 2022?</p>
+
+                    <div class="contenedor-opciones">
+                        <label for="opcion" class="etiqueta-opcion">
+                            <input type="radio" name="opcion" value="argentina">Argentina
+                            <img src="img/argentina.png" class="flag" alt="Bandera de Argentina" />
+                        </label>
+                        <label for="opcion" class="etiqueta-opcion">
+                            <input type="radio" name="opcion" value="brasil">Brasil
+                            <img src="img/brasil.png" class="flag" alt="Bandera de Brasil" />
+                        </label>
+                        <label for="opcion" class="etiqueta-opcion">
+                            <input type="radio" name="opcion" value="alemania">Alemania
+                            <img src="img/alemania.png" class="flag" alt="Bandera de Alemania" />
+                        </label>
+                        <label for="opcion" class="etiqueta-opcion">
+                            <input type="radio" name="opcion" value="francia">Francia
+                            <img src="img/francia.png" class="flag" alt="Bandera de Francia" />
+                        </label>
+                    </div>
+
+                    <div class="contenedor-mensaje">
+
+                    </div>
+                </div>
+
+                <div class="formulario_maximo">
+                    <p class="seccion-formulario-titulo">Ingrese dos números</p>
+
+                    <label for="max-numero-1">Número 1
+                        <input type="number" name="max-numero-1">
+                    </label>
+                    <label for="max-numero-2">Número 2
+                        <input type="number" name="max-numero-2">
+                    </label>
+
+                    <div class="contenedor-boton"><button type="button" class="btn btn-primary"
+                            onclick="mostrarNumeroMaximo()">Comprobar mayor</button>
+                    </div>
+                </div>
+
+                <div class="formulario_suma">
+                    <p class="seccion-formulario-titulo">Ingrese dos números</p>
+
+                    <label for="suma-numero-1">Número 1
+                        <input type="number" name="suma-numero-1" min="1">
+                    </label>
+                    <label for="suma-numero-2">Número 2
+                        <input type="number" name="suma-numero-2" min="1">
+                    </label>
+
+                    <div class="contenedor-resultado">
+
+                    </div>
+
+                    <div class="contenedor-boton"><button type="button" class="btn btn-primary"
+                            onclick="mostrarResultadoSuma()">Sumar</button></div>
+
+                </div>
+
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 
