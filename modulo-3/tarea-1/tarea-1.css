@@ -41,3 +41,87 @@
 /* ------------------------ */
 /* ------------------------ */
 /* ------------------------ */
+
+
+/* FORMULARIO */
+.container_formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario_opciones, .formulario_maximo, .formulario_suma{
+    margin-bottom: 25px;
+}
+
+.contenedor-opciones{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contenedor-opciones > label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.etiqueta-opcion > input{
+    margin: 10px;
+}
+
+.etiqueta-opcion > input:hover{
+    cursor: pointer;
+}
+
+.seccion-formulario-titulo {
+    font-size: 20px;
+    font-weight: 610;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.pregunta{
+    font-size: 20px;
+}
+
+.formulario_opciones, .formulario_maximo, .formulario_suma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.formulario_maximo > label, .formulario_suma > label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+input[type="number"] {
+    width: 80px;
+    border: none;
+    border-bottom: dotted 2px gray;
+}
+
+.contenedor-boton{
+    padding: 30px;
+}
+
+button{
+    width: 200px;
+}
+
+/* ELECCIÓN */
+.eleccion{
+    text-transform: capitalize;
+}
+
+.eleccion.argentina {
+    text-shadow: 1px 1px black;
+    background: linear-gradient(0deg, #2d94ee, white, #2d94ee);
+}
+
