@@ -125,3 +125,17 @@ button{
     background: linear-gradient(0deg, #2d94ee, white, #2d94ee);
 }
 
+/* GANADOR ELEGIDO */
+.ganador-elegido {
+    padding: 50px;
+    font-size: 16px;
+    font-style: italic;
+    border: solid 1px lightgray;
+    border-radius: 30px;
+}
+
+.ganador-elegido.argentina {
+    font-size: 20px;
+
+}
+
