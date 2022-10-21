@@ -83,6 +83,7 @@
 
 .pregunta{
     font-size: 20px;
+    text-align: center;
 }
 
 .formulario_opciones, .formulario_maximo, .formulario_suma {
@@ -132,11 +133,11 @@ button{
     font-style: italic;
     border: solid 1px lightgray;
     border-radius: 30px;
+    text-align: center;
 }
 
 .ganador-elegido.argentina {
     font-size: 20px;
-
 }
 
 /* BANDERAS */
@@ -160,6 +161,7 @@ button{
     font-style: italic;
     border: solid 1px lightgray;
     border-radius: 30px;
+    text-align: center;
 }
 
 /* --------------------------------------------------------------------------- */
