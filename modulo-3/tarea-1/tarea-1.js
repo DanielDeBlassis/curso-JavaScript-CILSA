@@ -78,3 +78,17 @@ function mostrarResultadoSuma() {
     const $contenedorResultado = document.querySelector(".contenedor-resultado");
     $contenedorResultado.innerHTML = `<p class="resultado-suma">La suma de los números ingresados es igual a ${suma}</p>`;
 }
+/**
+ * Suma dos números que recibe por parámetro y devuelve el resultado de la operación
+ * @param {number} num1 primer número a sumar
+ * @param {number} num2 segundo número a sumar
+ * @returns resultado de la suma del primer y segudno número
+ */
+function sumarNumeros(num1, num2) {
+    return num1 + num2;
+}
+
+
+
+
+
