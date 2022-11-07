@@ -65,3 +65,14 @@ function agregarParticipante() {
         , function () { alertify.error('Cancelar') })
         .set("labels", { ok: "Agregar", cancel: "Cancelar" });
 }
+
+//Con esta función mostramos el contenido faltante
+function mostrar() {
+
+    const $contenidoAdicional = document.querySelector("#adicional");
+    $contenidoAdicional.classList.remove("oculto");
+
+    const $btnMostrarContenido = document.querySelector("#enlace");
+    $btnMostrarContenido.classList.add("oculto");
+}
+
