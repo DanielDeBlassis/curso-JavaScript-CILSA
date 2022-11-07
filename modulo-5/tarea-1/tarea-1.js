@@ -47,3 +47,21 @@ function agregar() {
         swal("Error!", "No introdujo nombre o apellido", "error");
     }
 }
+
+function agregarParticipante() {
+    alertify.prompt('Agregar nombre a la lista', 'Por favor, ingresa nombre y apellido', 'Nombre y Apellido'
+        , function (evt, value) {
+            let patron = /\w/gi;
+            if (value.length != 0 && patron.test(value)) {
+                alertify.success('Ha ingresado: ' + value);
+                let nombre = document.createElement("li");
+                nombre.innerHTML = `<i class="far fa-check-circle"></i><span>${value}</span>`;
+                $listaNombre.appendChild(nombre);
+            } else {
+                swal("Error!", "No ingresó ningún nombre", "error");
+            }
+
+        }
+        , function () { alertify.error('Cancelar') })
+        .set("labels", { ok: "Agregar", cancel: "Cancelar" });
+}
