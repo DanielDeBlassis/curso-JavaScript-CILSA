@@ -47,3 +47,132 @@
 /* ------------------------ */
 /* ------------------------ */
 
+
+
+.oculto {
+    display: none;
+}
+
+#infopag {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    border: thin solid rgb(29, 13, 117);
+    border-radius: 20px;
+    gap: 25px;
+}
+
+#infopag>p {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+ul#alumnos {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+.visible {
+    display: inline;
+}
+
+.container__infopag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+section.anotados {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 70%;
+}
+
+ul#alumnos>li>span {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.contenedor__boton {
+    align-self: center;
+}
+
+.fa-check-circle,
+.fa-balance-scale {
+    color: green;
+}
+
+.fa-map-marker-alt {
+    color: #1392c5;
+}
+
+.fa-bullseye,
+.fa-heart {
+    color: red;
+}
+
+.container__mensaje {
+    border: thin solid rgb(29, 13, 117);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container__mensaje>p {
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+}
+
+.contenedor__boton {
+    display: flex;
+    gap: 30px;
+}
+
+.acercade__parrafo,
+.adicional__parrafos {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+section.acercade,
+div.adicional {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.adicional__mision,
+.adicional__meta,
+.adicional__objetivos,
+.adicional__alcance {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+h4 {
+    border-bottom: thin solid #ccc;
+}
+
