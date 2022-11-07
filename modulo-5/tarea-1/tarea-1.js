@@ -40,9 +40,13 @@ let $listaNombre = document.querySelector("#alumnos");
 function agregar() {
     if ((nombreIngresado != "null" && nombreIngresado.length != 0) && (apellidoIngresado != "null" && apellidoIngresado.length != 0)) {
         let nombreCompleto = `${nombreIngresado} ${apellidoIngresado}`;
-        let nombre = document.createElement("li");
-        nombre.innerHTML = `<i class="far fa-check-circle"></i><span>${nombreCompleto}</span>`;
-        $listaNombre.appendChild(nombre);
+        if ($listaNombre.textContent.indexOf(`${nombreCompleto}`) === -1) {
+            let nombre = document.createElement("li");
+            nombre.innerHTML = `<i class="far fa-check-circle"></i><span>${nombreCompleto}</span>`;
+            $listaNombre.appendChild(nombre);
+        } else {
+            swal("Error!", "Su nombre ya está en la lista", "error");
+        }
     } else {
         swal("Error!", "No introdujo nombre o apellido", "error");
     }
@@ -53,10 +57,15 @@ function agregarParticipante() {
         , function (evt, value) {
             let patron = /\w/gi;
             if (value.length != 0 && patron.test(value)) {
-                alertify.success('Ha ingresado: ' + value);
-                let nombre = document.createElement("li");
-                nombre.innerHTML = `<i class="far fa-check-circle"></i><span>${value}</span>`;
-                $listaNombre.appendChild(nombre);
+                if ($listaNombre.textContent.indexOf(`${value}`) === -1) {
+                    alertify.success('Ha ingresado: ' + value);
+                    let nombre = document.createElement("li");
+                    nombre.innerHTML = `<i class="far fa-check-circle"></i><span>${value}</span>`;
+                    $listaNombre.appendChild(nombre);
+                } else {
+                    swal("Error!", "Su nombre ya está en la lista", "error");
+                }
+
             } else {
                 swal("Error!", "No ingresó ningún nombre", "error");
             }
