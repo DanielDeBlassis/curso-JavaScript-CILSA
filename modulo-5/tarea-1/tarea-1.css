@@ -5,11 +5,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .detalles {
     font-size: 30px;
     padding: 50px;
+    width: 90%;
 }
 
 .detalles_titulo {
@@ -21,7 +23,7 @@
     margin: auto;
     padding: 10px;
     border-radius: 10px;
-    width: 1000px;
+    width: 90%;
 }
 
 .detalles_titulo:hover {
@@ -35,7 +37,8 @@
     font-size: 20px;
     font-weight: 500;
     opacity: 0.8;
-    width: 1000px;
+    margin: auto;
+    width: 90%;
     border: solid;
     border-color: #01a3e4;
     border-radius: 10px;
@@ -186,14 +189,6 @@ h4 {
         font-size: 30px;
         padding: 10px;
     }
-
-    .detalles_titulo {
-        width: 700px;
-    }
-
-    .detalles_descripcion {
-        width: 700px;
-    }
 }
 
 @media screen and (max-width: 769px) {
@@ -202,13 +197,8 @@ h4 {
         padding: 10px;
     }
 
-    .detalles_titulo {
-        width: 400px;
-    }
-
     .detalles_descripcion {
         font-size: 1rem;
-        width: 400px;
     }
 }
 
@@ -216,15 +206,16 @@ h4 {
     .detalles {
         font-size: 1rem;
         padding: 5px;
+        width: 95%;
     }
 
     .detalles_titulo {
-        width: 200px;
+        width: 95%;
     }
 
     .detalles_descripcion {
         font-size: 10px;
-        width: 200px;
+        width: 95%;
     }
 
     /* Estilos de la página */
@@ -232,7 +223,7 @@ h4 {
         border: thin solid rgb(29, 13, 117);
         border-radius: 10px;
         padding: 5px;
-        font-size: 10px;
+        font-size: 14px;
     }
 
     #infopag {
@@ -245,7 +236,9 @@ h4 {
         font-size: 25px;
     }
 
-    #infopag>p, .acercade__parrafo, .adicional__parrafos {
+    #infopag>p,
+    .acercade__parrafo,
+    .adicional__parrafos {
         font-size: 14px;
         line-height: 25px;
     }
@@ -261,26 +254,41 @@ h4 {
 
     .contenedor__boton>input {
         font-size: 12px;
+        height: 50px;
+        width: 190px;
     }
 
     i {
         font-size: 12px;
     }
-    
+
+    .contenedor__boton {
+        gap: 60px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 325px) {
     .detalles {
         font-size: 12px;
         padding: 5px;
+        width: 98%;
     }
 
     .detalles_titulo {
-        width: 150px;
+        width: 98%;
     }
 
     .detalles_descripcion {
         font-size: 9px;
-        width: 150px;
+        width: 98%;
+    }
+
+    /* Estilos de la página */
+    .container__mensaje {
+        font-size: 10px;
     }
 }
