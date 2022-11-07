@@ -35,6 +35,159 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="container_detalles">
+            <details class="detalles">
+                <summary class="detalles_titulo">Tarea Módulo 5: Ejercicios Practicas con DOM</summary>
+                <p class="detalles_descripcion">
+                    A partir de la página web proporcionada y utilizando las funciones DOM, crea dos variables
+                    con prompt y mostrar por pantalla la siguiente información:<br>
+                    1. 1er prompt (“Ingrese su nombre”)<br>
+                    2. 2do prompt (“Ingresa tu apellido”)<br>
+                    3. Añade un nuevo enlace en el primer párrafo<br>
+                    4. Un mensaje que de la bienvenida y muestre solo el nombre ingresado<br>
+                    5. Número de enlaces con los que cuenta la página.<br>
+                    6. Completar el código JavaScript proporcionado para que se añada un nuevo
+                    elemento a la lista cada vez que se pulsa sobre el botón, (El nombre y apellido
+                    ingresados con los prompt) Utilizar las funciones DOM para crear nuevos nodos y
+                    añadirlos a la lista existente. En esta parte del ejercicio, sólo se debe saber que al
+                    pinchar sobre el botón, se ejecuta la función llamada agrega().<br>
+                    7. Revisar el funcionamiento que tiene el código JavaScript proporcionado que cuando
+                    se pinche sobre el ultimo enlace se muestra completo el contenido de texto. Además,
+                    el enlace deja de mostrarse después de pulsarlo por primera vez.. En este ejercicio,
+                    sólo se debe saber que al pinchar sobre el enlace, se ejecuta la función llamada
+                    muestra().
+                </p>
+            </details>
+        </section>
+        <section class="container__infopag">
+            <div id="infopag">
+
+                <div class="container__mensaje oculto">
+
+                </div>
+
+                <h1>Centros de Formación CILSA</h1>
+                <p>Son centros tecnológicos comunitarios que tienen por objetivos promover el acceso y la capacitación
+                    en el
+                    uso
+                    de las Tecnologías de la Información y la Comunicación, y la preparación para la inclusión laboral
+                    de
+                    poblaciones en situación de vulnerabilidad social.
+                    <a href="https://www.cilsa.org">(Visita la Página de CILSA)</a> Se encuentran en las ciudades de
+                    Santa
+                    Fe,
+                    Rosario, Córdoba, Mar del Plata, La Plata, Mendoza y CABA.
+                </p>
+                <section class="anotados">
+                    <h2>Si quiere anotarse para los próximos cursos, presione "Añadir su Nombre"</h2>
+                    <ul id="alumnos">
+                        <li><i class="far fa-check-circle"></i><span>Jesús Chirinos</span></li>
+                        <li><i class="far fa-check-circle"></i><span>Mónica Figueredo</span></li>
+                        <li><i class="far fa-check-circle"></i><span>Florencia Campagna</span></li>
+                        <li><i class="far fa-check-circle"></i><span>Daniela Vallejos</span></li>
+                        <li><i class="far fa-check-circle"></i><span>Facundo Morales</span></li>
+                    </ul>
+                    <div class="contenedor__boton">
+                        <input id="agregarNombre" class="btn btn-primary" type="button" name="" value="Añadir su Nombre"
+                            onclick="agregar();">
+                        <input id="agregarOtroNombre" class="btn btn-primary" type="button" name=""
+                            value="Añadir otro Nombre" onclick="agregarParticipante();">
+                    </div>
+                </section>
+
+                <hr color="blue" size="3">
+
+                <section class="acercade">
+                    <h2>Conoce un poco más sobre nosotros</h2>
+                    <p class="acercade__parrafo" id="texto">CILSA es una Organización No Gubernamental (O.N.G.) de bien público fundada el 14 de
+                        Mayo
+                        de
+                        1966
+                        en la ciudad de Santa Fe, República Argentina.
+                    </p>
+                    <a id="enlace" href="#adicional" title="Seguir leyendo" onclick="mostrar(); return false;">Seguir
+                        leyendo</a>
+
+                    <div id="adicional" class="oculto">
+                        <div class="adicional__titulo">
+                            <h3>Misión y Objetivos</h3>
+                        </div>
+                        <div class="adicional__mision">
+                            <h4>Misión</h4>
+                            <p class="adicional__parrafos">
+                                <i class="fas fa-heart"></i> Promover la inclusión plena
+                                de personas con discapacidad y personas provenientes de sectores
+                                marginados de
+                                la
+                                sociedad como niños, niñas y adolescentes en situación de vulnerabilidad
+                                social.
+                            </p>
+                        </div>
+
+                        <div class="adicional__meta">
+                            <h4>Meta</h4>
+                            <p class="adicional__parrafos">
+                                <i class="fas fa-balance-scale"></i> Vencer las barreras
+                                ideológicas para lograr una sociedad que no discrimine ni margine,
+                                brindando a
+                                todos
+                                los individuos igualdad de oportunidades para su desarrollo.<br>
+                                <strong><a name="objetivos"></a></strong>
+                            </p>
+                        </div>
+
+                        <div class="adicional__objetivos">
+                            <h4>Objetivos</h4>
+                            <p class="adicional__parrafos">
+                                <i class="fas fa-bullseye"></i> Generar conciencia en la
+                                comunidad sobre la importancia de construir una sociedad inclusiva y
+                                promover su
+                                participación activa.
+                            </p>
+                            <p class="adicional__parrafos">
+                                <i class="fas fa-bullseye"></i> Mejorar la calidad de vida de
+                                las personas con discapacidad con la entrega gratuita de un elemento
+                                ortopédico
+                                que
+                                facilite su movilidad.
+                            </p>
+                            <p class="adicional__parrafos">
+                                <i class="fas fa-bullseye"></i> Brindar contención y trabajar
+                                por los derechos de los niños provenientes de familias de escasos
+                                recursos
+                                económicos.
+                            </p>
+                            <p class="adicional__parrafos">
+                                <i class="fas fa-bullseye"></i> Acercar la posibilidad a
+                                personas con discapacidad de acceder a una formación académica superior,
+                                a una
+                                capacitación profesional y al conocimiento de las herramientas
+                                tecnológicas,
+                                promoviendo así su inclusión social y laboral.
+                            </p>
+                            <p class="adicional__parrafos">
+                                <i class="fas fa-bullseye"></i> Promover el desarrollo de
+                                actividades deportivas y recreativas como medio de inclusión social.
+                            </p>
+                        </div>
+                        <div class="adicional__alcance">
+                            <h4>Alcance</h4>
+                            <p class="adicional__parrafos">
+                                <i class="fas fa-map-marker-alt"></i></i> CILSA cuenta con presencia
+                                institucional en Santa Fe, Ciudad Autónoma de Buenos Aires, Córdoba,
+                                Rosario, La
+                                Plata, Mar del Plata y Mendoza. A través de convenios con otras ONG´S,
+                                llega a
+                                Tucumán, Cipolletti y Trelew.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>
