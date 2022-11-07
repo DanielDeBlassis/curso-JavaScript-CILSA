@@ -33,3 +33,17 @@ window.onload = function () {
     $contenedorMensaje.appendChild(pEnlaces);
 
 }
+
+//Completa la función agrega()
+let $listaNombre = document.querySelector("#alumnos");
+
+function agregar() {
+    if ((nombreIngresado != "null" && nombreIngresado.length != 0) && (apellidoIngresado != "null" && apellidoIngresado.length != 0)) {
+        let nombreCompleto = `${nombreIngresado} ${apellidoIngresado}`;
+        let nombre = document.createElement("li");
+        nombre.innerHTML = `<i class="far fa-check-circle"></i><span>${nombreCompleto}</span>`;
+        $listaNombre.appendChild(nombre);
+    } else {
+        swal("Error!", "No introdujo nombre o apellido", "error");
+    }
+}
